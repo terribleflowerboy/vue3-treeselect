@@ -1,26 +1,5 @@
 import sleep from "yaku/lib/sleep";
 import * as utils from "@/utils";
-import watchSizeModule from "watch-size";
-
-// Mock the watch-size module since its scroll-based approach doesn't work in happy-dom
-vi.mock("watch-size", () => {
-  let currentListener = null;
-  const mockFn = vi.fn((element, listener) => {
-    currentListener = listener;
-    // Return unwatch function
-    return () => {
-      currentListener = null;
-    };
-  });
-  mockFn.__triggerListener = (width, height) => {
-    if (currentListener) {
-      currentListener({ width, height });
-    }
-  };
-  return {
-    default: mockFn
-  };
-});
 
 describe("Utils", () => {
   describe("Debugging Helpers", () => {
@@ -106,60 +85,6 @@ describe("Utils", () => {
 
     it("debounce", () => {
       // vendor codes
-    });
-
-    describe("watchSize", () => {
-      const { watchSize } = utils;
-
-      let $el;
-      let height;
-      let log;
-      const wait = 100;
-
-      const listener = (...args) => {
-        log.push(args);
-      };
-      const enlarge = () => {
-        $el.style.height = (height += 10) + "px";
-      };
-      const reset = () => {
-        $el = document.createElement("div");
-        $el.style.height = (height = 100) + "px";
-        $el.style.position = "relative";
-        document.body.append($el);
-        log = [];
-      };
-      const cleanup = () => {
-        $el.remove();
-      };
-      const test = async () => {
-        reset();
-
-        const unwatch = watchSize($el, listener);
-        expect(log).toBeArrayOfSize(0);
-
-        // Use the mock's helper to trigger the listener manually
-        // First size change: 100 -> 110
-        enlarge(); // height becomes 110
-        watchSizeModule.__triggerListener(100, 110);
-        await sleep(wait);
-        expect(log).toBeArrayOfSize(1);
-        expect(log[0][0].height).toBe(110);
-
-        // Second size change: 110 -> 120
-        enlarge(); // height becomes 120
-        watchSizeModule.__triggerListener(100, 120);
-        await sleep(wait);
-        expect(log).toBeArrayOfSize(2);
-        expect(log[1][0].height).toBe(120);
-
-        unwatch();
-        cleanup();
-      };
-
-      it("for modern browsers", async () => {
-        await test();
-      });
     });
 
     it("setupResizeAndScrollEventListeners", async () => {

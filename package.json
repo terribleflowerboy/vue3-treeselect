@@ -30,8 +30,7 @@
     "fuzzysearch": "1.0.3",
     "is-promise": "4.0.0",
     "lodash": "^4.17.23",
-    "material-colors": "1.2.6",
-    "watch-size": "^2.0.0"
+    "material-colors": "1.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
