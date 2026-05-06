@@ -1,6 +1,6 @@
 # vue3-treeselect
 
-[![npm](https://badgen.now.sh/npm/v/@zanmato/vue3-treeselect)](https://www.npmjs.com/package/@zanmato/vue3-treeselect) ![License](https://badgen.net/github/license/zanmato/vue3-treeselect)
+[![npm](https://badgen.now.sh/npm/v/@terribleflowerboy/vue3-treeselect)](https://www.npmjs.com/package/@terribleflowerboy/vue3-treeselect) ![License](https://badgen.net/github/license/terribleflowerboy/vue3-treeselect)
 
 A multi-select component with nested options support for Vue 3.
 
@@ -26,7 +26,7 @@ _Requires Vue 3.0+_
 It's recommended to install vue3-treeselect via npm, and build your app using a bundler like [webpack](https://webpack.js.org/).
 
 ```bash
-npm install --save @zanmato/vue3-treeselect
+npm install --save @terribleflowerboy/vue3-treeselect
 ```
 
 This example shows how to integrate the component with your [Vue SFCs](https://vuejs.org/guide/scaling-up/sfc.html).
@@ -43,9 +43,9 @@ This example shows how to integrate the component with your [Vue SFCs](https://v
 import { reactive } from "vue";
 
 // import the component
-import Treeselect from "@zanmato/vue3-treeselect";
+import Treeselect from "@terribleflowerboy/vue3-treeselect";
 // import the styles
-import "@zanmato/vue3-treeselect/dist/vue3-treeselect.min.css";
+import "@terribleflowerboy/vue3-treeselect/dist/vue3-treeselect.min.css";
 
 const options = [
   {
@@ -80,7 +80,7 @@ const state = reactive({
 
 ### Documentation & Live Demo
 
-[Visit the website](https://zanmato.github.io/vue3-treeselect/)
+[Visit the website](https://terribleflowerboy.github.io/vue3-treeselect/)
 
 Note: please use a desktop browser since the website hasn't been optimized for mobile devices.
 
@@ -93,7 +93,7 @@ Note: please use a desktop browser since the website hasn't been optimized for m
 
 ### Bugs
 
-You can [open an issue](https://github.com/zanmato/vue3-treeselect/issues/new).
+You can [open an issue](https://github.com/terribleflowerboy/vue3-treeselect/issues/new).
 
 ### Contributing
 
@@ -119,4 +119,4 @@ Some icons used in this project:
 
 ### License
 
-Released under the [MIT License](https://github.com/zanmato/vue3-treeselect/blob/master/LICENSE).
+Released under the [MIT License](https://github.com/terribleflowerboy/vue3-treeselect/blob/master/LICENSE).

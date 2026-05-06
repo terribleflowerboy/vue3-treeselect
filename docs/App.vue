@@ -10,15 +10,15 @@
       <nav class="site-header-nav">
         <a
           class="site-header-nav-item"
-          href="https://github.com/zanmato/vue3-treeselect/releases">
+          href="https://github.com/terribleflowerboy/vue3-treeselect/releases">
           v{{ require("../package.json").version }}
         </a>
         <span class="site-header-nav-item">
           <a
             class="github-button"
-            href="https://github.com/zanmato/vue3-treeselect"
+            href="https://github.com/terribleflowerboy/vue3-treeselect"
             data-show-count="true"
-            aria-label="Star zanmato/vue3-treeselect on GitHub">
+            aria-label="Star terribleflowerboy/vue3-treeselect on GitHub">
             Star
           </a>
         </span>
@@ -51,7 +51,7 @@
       </div>
       <div id="content">
         <section-header name="Introduction" />
-        <a href="https://github.com/zanmato/vue3-treeselect">vue3-treeselect</a>
+        <a href="https://github.com/terribleflowerboy/vue3-treeselect">vue3-treeselect</a>
         is a multi-select component with nested options support for
         <a href="https://www.vuejs.org">Vue.js</a>
         .
@@ -79,7 +79,7 @@
         <p>It's recommended to install vue3-treeselect via npm.</p>
         <pre class="language-bash">
           <code class="language-bash">
-            npm install --save @zanmato/vue3-treeselect
+            npm install --save @terribleflowerboy/vue3-treeselect
           </code>
         </pre>
 

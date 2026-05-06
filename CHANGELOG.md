@@ -1,4 +1,4 @@
-# @zanmato/vue3-treeselect
+# @terribleflowerboy/vue3-treeselect
 
 ## 0.4.4
 

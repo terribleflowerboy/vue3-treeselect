@@ -1,5 +1,5 @@
 {
-  "name": "@zanmato/vue3-treeselect",
+  "name": "@terribleflowerboy/vue3-treeselect",
   "version": "0.4.4",
   "description": "Tree select hierarchical component for Vue 3",
   "main": "dist/vue3-treeselect.cjs.min.js",
@@ -14,7 +14,7 @@
     },
     "./dist/*": "./dist/*"
   },
-  "author": "zanmato",
+  "author": "terribleflowerboy",
   "scripts": {
     "prepare": "npm run build-library",
     "build-library": "webpack build --config webpack.lib.config.js --mode production",
@@ -79,13 +79,13 @@
     "vue": "^3.0.0"
   },
   "bugs": {
-    "url": "https://github.com/zanmato/vue3-treeselect/issues"
+    "url": "https://github.com/terribleflowerboy/vue3-treeselect/issues"
   },
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 8"
   ],
-  "homepage": "https://github.com/zanmato/vue3-treeselect",
+  "homepage": "https://github.com/terribleflowerboy/vue3-treeselect",
   "files": [
     "dist/*.js",
     "dist/*.css",
@@ -109,6 +109,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zanmato/vue3-treeselect.git"
+    "url": "git+https://github.com/terribleflowerboy/vue3-treeselect.git"
   }
 }
